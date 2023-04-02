@@ -1,0 +1,39 @@
+.footer{
+    height: 200px;
+    background-color: rgb(193, 185, 185);
+    text-align: center;
+    align-items: center;
+}
+
+.sign_up{
+    display: flex;
+    justify-content: center;
+    height: 400px;
+    margin: 0 100px;
+    background-color: rgb(71, 72, 71);
+}
+
+.uses{
+    margin: 10px 0;
+    width: 250px;
+    height: 30px;
+    color: black;
+}
+
+.pass{
+    margin: 10px 0;
+    width: 250px;
+    height: 30px;
+    color: black;
+}
+
+.sub{
+    margin: 10px 0;
+    width: 600px;
+    height: 50px;
+    border: 1px solid #a8a8a8;
+}
+
+.sub:hover{
+    background-color: rgb(120, 119, 119);
+}

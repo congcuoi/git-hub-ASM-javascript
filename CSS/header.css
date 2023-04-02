@@ -1,0 +1,136 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Work Sans,sans-serif;
+    text-decoration: none;
+}
+
+body{
+    background-color: white;
+    height: 1000px;
+    margin: 0;
+}
+
+.header {
+    color: white;
+    display: block;
+    position: relative;
+    background-color: rgb(27, 27, 27);
+}
+
+.header_link{
+    background-color: rgb(27, 27, 27);
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px;
+}
+
+.header_link a{
+    color: white;
+    text-decoration: none;
+    padding: 0 8px;
+}
+
+.search{
+    background-color: white;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px;
+}
+
+.img_search{
+    height: 50px;
+}
+
+
+img , input{
+    background-color: white;
+    color: white;
+}
+
+.search_input{
+    width: 400px;
+}
+
+.search_input input{
+    min-width: 400px;
+    background: #f7f8fa;
+    color: #777;
+    height: 50px;
+    border-radius: 5px;
+    padding: 0 20px;
+}
+
+.icon_search{
+    display: flex;
+    flex-direction: row;
+}
+
+.wishlink, .my_cart{
+    background-color: white;
+    color: black;
+    padding: 0 10px;
+}
+
+.header_technology{
+    background-color: rgb(27, 27, 27);
+    color: #bcbcbc;
+    height: 50px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px;
+}
+
+.header_technology li:hover .subnav{
+    width: 200px;
+    display: block;
+    transform: translateX(-40px);
+    height: auto;
+    background-color: white;
+    color: black;
+    position: absolute;
+    list-style: none;
+    z-index: 20;
+}
+
+.subnav{
+    display: none;
+    box-shadow: 2px 5px 10px #888888;
+}
+
+.subnav > li{
+    padding: 15px 20px;
+    
+}
+
+.subnav > li:hover {
+    background-color: rgb(208, 208, 208);
+    
+}
+
+.technology{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style: none;
+    padding: 0 350px;
+    padding-top: 15px;
+    font-family: Work Sans,sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.technology > li > a{
+    position: relative;
+    font-size: 20px;
+    color: white;
+}
+

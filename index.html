@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASM</title>
+    <link rel="stylesheet" href="./CSS/header.css">
+    <link rel="stylesheet" href="./CSS/content.css">
+    <link rel="stylesheet" href="./CSS/items.css">
+    <link rel="stylesheet" href="./CSS/footer.css">
+    <link rel="stylesheet" href="./CSS/signIn.css">
+    <script src="./js/signIn.js"></script>
+    <script src="./js/banner.js"></script>
+    <script src="./js/Cart.js"></script>
+    <link rel="stylesheet" href="./ICON/fontawesome-free-6.3.0-web/fontawesome-free-6.3.0-web/css/all.css">
+</head>
+    <!-- Banner
+    Menu
+    mat hang
+    chi tiet mat hang
+    dang nhap, dang ky
+    -->
+<body>
+    <div class="header">
+        <div class="header_link">
+                <div class="header_container_left">
+                        <span class="language">USE</span>
+                        Order Online Call Us
+                        <a href="">0829763760</a>   
+                </div>
+
+                <div class = "header_container_right">
+                    <button class="js-click-SignIn" onclick="checkSign_in()">Sign In</button>
+                    Or
+                    <button class="js-click-SignIn" onclick="checkSign_up()">Sign Up</button>
+                </div>
+        </div>
+        <div class="search">
+                <div class="img_search">
+                    <img src="https://cdn.shopify.com/s/files/1/0023/4104/4283/files/logoastor_300x300.png?v=1645334114" alt="">
+                </div>
+                <div class="search_input">
+                    <input type="search" value placeholder="Search our store" autocomplete="off">
+                </div>
+                <div class="icon_search">
+                    <div class="wishlink">wishlink</div>
+                    <a href="/hang.html" class="my_cart">
+                        <i class="fa-thin fa-cart-shopping"
+                        style="width: 20px;
+                        height: 20px;"></i>
+                        My Cart</a>
+                        <p
+                        style="background-color: red;
+                        border-radius: 10px;
+                        position: relative;
+                        top: -13px;
+                        right: 15px;
+                        "></p>
+                </div>
+                
+        </div>
+        <div class="header_technology">
+            <ul class="technology">
+                <li>
+                    <a href="">HOME DEMO</a>
+                        <ul class="subnav">
+                            <li>BMW</li>
+                            <li>AUDI</li>
+                            <li>LAMBORGHINI</li>
+                        </ul>
+                </li>
+                <li>
+                    <a href="">LAMBORGHINI</a>
+                    <ul class="subnav">
+                        <li>Veneno</li>
+                        <li>Evo</li>
+                        <li>URUS</li>
+                        <li>Sian</li>
+                        <li>Aventardo</li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="">AUDI</a>
+                    <ul class="subnav">
+                        <li>Audi S7</li>
+                        <li>Audi A1</li>
+                        <li>Audi A5 Coupe</li>
+                        <li>Audi S4</li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="">BMW</a>
+                    <ul class="subnav">
+                        <li>BMW 118i</li>
+                        <li>BMW 2 Series</li>
+                        <li>BMW 320i</li>
+                        <li>BMW X1</li>
+                        <li>BMW 430i Gran Coupe</li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="">CONTACT</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="sign_in js-getform-SignIn" ondblclick="hidden_signIn()">
+        <div class="form_Sign_in">
+            <form name="myForm"  onsubmit="return validateFormIn()" method="get"
+            style="display: flex;
+            flex-direction: column;
+            width: 400px;
+            transform: translateX(110px);">
+                Nhập Tài Khoản<input type="text" name="username"  placeholder="Tài khoản" style="height: 30px;">
+                Nhập mật khẩu<input type="password" name="password"  placeholder="Mật khẩu" style="height: 30px;">
+                <button class="btn btn-primary btn-submit" type="submit" value="Submit"
+                style="width: 200px;
+                height: 50px;
+                margin-top: 15px;">
+                    Đăng nhập
+                </button>
+            </form>
+        </div>
+        
+    </div>
+
+    <div class="sign_in js-getform-SignUp sign_up" ondblclick="hidden_signUp()">
+        <div class="form_Sign_in">
+            <form name="myForm" onsubmit="return validateForm()" method="post" style="display: flex;
+            flex-direction: column;
+            width: 400px;
+            transform: translateX(110px);">
+                Tạo Tài Khoản<input type="text" name="username" id="username" placeholder="Tài khoản" style="height: 30px;" >
+                Nhập Email<input type="text" name="email" id="mail" placeholder="Email" style="height: 30px;">
+                Nhập Mật Khẩu<input type="password" name="password1"  placeholder="Mật khẩu" style="height: 30px;">
+                Nhập lại mật khẩu<input type="password" name="password_confirm"  placeholder="Nhập lại mật khẩu" style="height: 30px;">
+                <button class="btn btn-primary btn-submit" type="submit" value="Submit" 
+                style="width: 200px;
+                height: 50px;
+                margin-top: 15px;">
+                    Đăng ký
+                    <i class="fa-sharp fa-solid fa-right-to-bracket"></i>
+                </button>
+            </form>
+        </div>
+        
+    </div>
+
+    <div class="Content">
+        <div class="categeries_pr">
+            <div class="categeries">
+                <div class="categeries_bar">
+                    CATEGERIES
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+                <div class="categeries_options">
+                    <ul>
+                        <li>
+                            <a href="">Lamborghini URUS</a>
+                        </li>
+                        <li>
+                            <a href="">Lamborghini Veneno</a>
+                        </li>
+                        <li>
+                            <a href="">Lamborghini Evo</a>
+                        </li>
+                        <li>
+                            <a href="">Lamborghini Sian</a>
+                        </li>
+                        <li>
+                            <a href="">Lamborghini Aventardo</a>
+                        </li>
+                    </ul>
+                    
+                </div>
+            </div>
+            <div id="pr">
+                <img class="img-banner" src="./img/hinh1.jpg" alt="">
+                <img class="img-banner" src="./img/hinh2.jpg" alt="" >
+                <img class="img-banner" src="./img/hinh3.jpg" alt="" >
+                <img class="img-banner" src="./img/hinh4.jpg" alt="" >
+                <img class="img-banner banner" src="./img/hinh5.jpg" alt="" >
+                <div class="pr_content">
+                    <h4>LAMBORGHINI</h4>
+                    <h1>100% in LAMBORGHINI</h1>
+                    <button>BUY NOW</button>
+                </div>  
+            </div>
+        </div>
+    </div>
+    
+    <h1 style="padding : 30px 400px;
+        background-color: rgb(192, 191, 191);
+        color: black;
+        margin: 0 170px 50px 170px;
+        border-radius: 20px;">Product Lamborghini</h1>
+    <div class="option_items">
+        <div class="items_column">
+            <div class="items">
+                <div class="content_items">
+                    <div class="img_items">
+                        <img class="img" src="./img/hinh5.jpg" alt="">
+                    </div>
+                    <div class="technology_items">
+                        <h1>Lamborghini URUS</h1>
+                        <div class="button_buy">
+                            <button class="btn-buy">BUY</button>
+                            <div class="sale">
+                                <p>Lamborghini URUS</p>
+                                <span>$300.000</span>
+                            </div>
+                            
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+
+        <div class="items_column">
+            <div class="items">
+                <div class="content_items">
+                    <div class="img_items">
+                        <img class="img" src="./img/hinh3.jpg" alt="">
+                    </div>
+                    <div class="technology_items">
+                        <h1>Lamborghini Veneno</h1>
+                        <div class="button_buy">
+                            <button class="btn-buy">BUY</button>
+                            <div class="sale">
+                                <p>Lamborghini Veneno</p>
+                                <span>$300.000</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="items_column">
+            <div class="items">
+                <div class="content_items">
+                    <div class="img_items">
+                        <img class="img" src="./img/hinh1.jpg" alt="">
+                    </div>
+                    <div class="technology_items">
+                        <h1>Lamborghini Aventardo</h1>
+                        <div class="button_buy">
+                            <button class="btn-buy">BUY</button>
+                            <div class="sale">
+                                <p>Lamborghini Aventardo</p>
+                                <span>$300.000</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        
+    </div>
+</body>
+</html>

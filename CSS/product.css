@@ -1,0 +1,51 @@
+.body_product{
+    display: block;
+    height: auto;
+    width: 100%;
+    text-align: center;
+}
+
+.product{
+    display: flex;
+    flex-direction: row;
+    margin: 10px 200px;
+    background-color: #e9e8e8;
+    border-bottom: 1px solid #adadad;
+}
+
+.img_product{
+    width: 200px;
+    height: 150px;
+    margin: 20px 0;
+    margin-left: 50px;
+}
+
+.img_product > img{
+    width: 200px;
+    height: 150px;
+}
+
+.technology_product{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    margin: 0 50px;
+    align-items: center;
+}
+
+.pay_product{
+    padding: 20px;
+}
+
+.pay_putton{
+    padding: 20px;
+}
+
+.name_product{
+    padding: 20px 0;
+}
+
+.sale_product{
+    color: red;
+}

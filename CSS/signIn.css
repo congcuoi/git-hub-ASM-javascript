@@ -1,0 +1,28 @@
+.sign_in{
+    display: none;
+    position: fixed;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    z-index: 110;
+    top: 0;
+    margin: 0 100px;
+    background-color: rgb(71, 72, 71, 0.8);
+    transform: translateX(-100px);
+    align-items: center;
+}
+
+.form_Sign_in{
+    display: flex;;
+    width: 600px;
+    height: 300px;
+    background-color: rgb(44, 37, 51);
+    color: white;
+    align-items: center;
+    text-align: center;
+}
+
+.form_Sign_in > input {
+    height: 50px;
+}
+

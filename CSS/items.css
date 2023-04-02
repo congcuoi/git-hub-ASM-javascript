@@ -1,0 +1,75 @@
+.option_items{
+    display: flex;
+    flex-direction: row;
+    margin: 0 150px;
+}
+
+.items_column{
+    display: block;
+    margin: 0 20px;
+    width: 406px;
+    height: 500px;
+    margin-right: 15px;
+}
+
+.items{
+    width: 350px;
+    margin-top: 15px;
+    border-bottom: 1px solid #ddd;
+}
+
+.content_items{
+    display: flex;
+    flex-direction: column;
+    height: 450px;
+}
+
+.img{
+    width: 350px;
+    height: 300px;
+    border-radius: 3px;
+    box-shadow: 5px 5px 5px #aaaaaa;
+    margin: 0 20px 5px 0;
+}
+
+.technology_items > h1{
+    margin: 10px 0 15px 0;
+    text-align: center;
+    font-weight: 300;
+}
+
+.button_buy{
+    display: none;
+    background: rgb(151, 153, 151);
+    z-index: 15;
+    width: 350px;
+    height: 200px;
+    border: none;
+    text-align: center;
+    transform: translateY(-130px);
+}
+
+.button_buy > button{
+    z-index: 10;
+    margin: 10px 0 15px 0;  
+    width: 200px;
+    height: 50px;
+    transform: translateY(30px);
+    border: none;
+    color: white;
+    background-color: black;
+}
+
+.sale{
+    transform: translateY(40px);
+}
+
+.sale > span {
+    color: red;
+}
+
+
+
+.option_items .items_column:hover .button_buy{
+    display: block;
+}
