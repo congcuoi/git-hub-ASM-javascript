@@ -54,11 +54,3 @@ function validateForm() {
         return false;
     }
 }
-
-function validateEmail(email) {
-    // Sử dụng regex để kiểm tra email hợp lệ
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    return emailRegex.test(email);
-}
-
-

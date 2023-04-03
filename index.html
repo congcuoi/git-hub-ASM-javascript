@@ -10,9 +10,10 @@
     <link rel="stylesheet" href="./CSS/items.css">
     <link rel="stylesheet" href="./CSS/footer.css">
     <link rel="stylesheet" href="./CSS/signIn.css">
+    <link rel="stylesheet" href="./CSS/cart.css">
     <script src="./js/signIn.js"></script>
     <script src="./js/banner.js"></script>
-    <script src="./js/Cart.js"></script>
+    
     <link rel="stylesheet" href="./ICON/fontawesome-free-6.3.0-web/fontawesome-free-6.3.0-web/css/all.css">
 </head>
     <!-- Banner
@@ -45,7 +46,7 @@
                 </div>
                 <div class="icon_search">
                     <div class="wishlink">wishlink</div>
-                    <a href="/hang.html" class="my_cart">
+                    <a onclick="myCart()" class="my_cart">
                         <i class="fa-thin fa-cart-shopping"
                         style="width: 20px;
                         height: 20px;"></i>
@@ -58,8 +59,31 @@
                         right: 15px;
                         "></p>
                 </div>
-                
         </div>
+        <div class="cart">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Image</th>
+                        <th>Name</th>
+                        <th>Price</th>
+                        <th>Quantity</th>
+                        <th>Delete</th>
+                    </tr>
+                </thead>
+                
+                <tbody>
+                        
+                </tbody>
+            </table>
+
+            <div class="food_cart">
+                <button class="closs" onclick="closeCart()">CLOSE</button>
+                <button class="payment">PAYMENT</button>
+            </div>
+            
+        </div>
+
         <div class="header_technology">
             <ul class="technology">
                 <li>
@@ -197,72 +221,74 @@
         margin: 0 170px 50px 170px;
         border-radius: 20px;">Product Lamborghini</h1>
     <div class="option_items">
-        <div class="items_column">
-            <div class="items">
-                <div class="content_items">
-                    <div class="img_items">
-                        <img class="img" src="./img/hinh5.jpg" alt="">
-                    </div>
-                    <div class="technology_items">
-                        <h1>Lamborghini URUS</h1>
-                        <div class="button_buy">
-                            <button class="btn-buy">BUY</button>
-                            <div class="sale">
-                                <p>Lamborghini URUS</p>
-                                <span>$300.000</span>
-                            </div>
-                            
-                        </div>
-                        
-                    </div>
+        <div class="product_items">
+            <div class="product_content">
+                <div class="img_product">
+                    <img style="
+                    width: 300px;
+                    height: 150px;" 
+                    src="./img/lamborghini-sian-mau-xanh-tinbanxe.png" alt="">
                 </div>
-            </div>
-            
-        </div>
-
-        <div class="items_column">
-            <div class="items">
-                <div class="content_items">
-                    <div class="img_items">
-                        <img class="img" src="./img/hinh3.jpg" alt="">
+                <div class="information_product">
+                    <h1>LAMBORGHINI</h1>
+                    <p>Lamborghini SIAN</p>
+                    <span>$350.000</span>
+                    <div class="btn">
+                        <button class="btn_buy">BUY</button>
+                        <button class="btn_information">INFORMATION</button>
                     </div>
-                    <div class="technology_items">
-                        <h1>Lamborghini Veneno</h1>
-                        <div class="button_buy">
-                            <button class="btn-buy">BUY</button>
-                            <div class="sale">
-                                <p>Lamborghini Veneno</p>
-                                <span>$300.000</span>
-                            </div>
-                        </div>
-                    </div>
+                    
                 </div>
             </div>
         </div>
 
-        <div class="items_column">
-            <div class="items">
-                <div class="content_items">
-                    <div class="img_items">
-                        <img class="img" src="./img/hinh1.jpg" alt="">
+        <div class="product_items">
+            <div class="product_content">
+                <div class="img_product">
+                    <img style="
+                    width: 300px;
+                    height: 150px;" 
+                    src="./img/Lamborghini-Urus-PNG-Image.png" alt="">
+                </div>
+                <div class="information_product">
+                    <h1>LAMBORGHINI</h1>
+                    <p>Lamborghini URUS</p>
+                    <span>$450.000</span>
+                    <div class="btn">
+                        <button class="btn_buy">BUY</button>
+                        <button class="btn_information">INFORMATION</button>
                     </div>
-                    <div class="technology_items">
-                        <h1>Lamborghini Aventardo</h1>
-                        <div class="button_buy">
-                            <button class="btn-buy">BUY</button>
-                            <div class="sale">
-                                <p>Lamborghini Aventardo</p>
-                                <span>$300.000</span>
-                            </div>
-                        </div>
-                    </div>
+                    
                 </div>
             </div>
         </div>
+
+        <div class="product_items">
+            <div class="product_content">
+                <div class="img_product">
+                    <img style="
+                    width: 300px;
+                    height: 150px;" 
+                    src="./img/Lamborghini-Aventador-PNG-File.png" alt="">
+                </div>
+                <div class="information_product">
+                    <h1>LAMBORGHINI</h1>
+                    <p>Lamborghini AVENTADOR</p>
+                    <span>$500.000</span>
+                    <div class="btn">
+                        <button class="btn_buy">BUY</button>
+                        <button class="btn_information">INFORMATION</button>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+
     </div>
 
     <div class="footer">
         
     </div>
+    <script src="./js/Cart.js"></script>
 </body>
 </html>

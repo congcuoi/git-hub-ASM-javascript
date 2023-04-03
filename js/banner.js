@@ -7,4 +7,4 @@ function nextSlide() {
     currentSlide = (currentSlide + 1) % slid.length;
     slid[currentSlide].classList.add('banner');
 }
-setInterval(nextSlide, 5000);
+setInterval(nextSlide, 3000);
